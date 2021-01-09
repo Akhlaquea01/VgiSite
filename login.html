@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Login-My Collage</title>
+</head>
+<body background="VGI/Bg5.JPG">
+<marquee style="color:green; font-size:20px;">Welcome to VISHVESHWARYA GROUP OF INSTITUTIONS </marquee><hr>
+<center>
+<img src="VGI/Camp1.jpg" style="width:80%; height:300px;">
+<br>
+
+<a href="index.html"><button style="background-color:gray;height:50px; width:100px;">Home</button></a>
+
+<a href="academics.html"><button style="background-color:gray;height:50px; width:100px;">Academics</button></a>
+
+<a href="photo.html"><button style="background-color:gray;height:50px; width:100px;">Photo Gallery</button></a>
+
+<a href="about.html"><button style="background-color:gray;height:50px; width:100px;">About us</button></a>
+
+<a href="login.html"><button style="background-color:green;height:50px; width:100px;">Login</button></a>
+
+<a href="message.html"><button style="background-color:gray;height:50px; width:100px;">Messages</button></a><br/>
+<br/>
+
+
+
+
+
+
+
+
+
+</h1>
+<form name="login">
+Username<input type="text" name="userid"/>
+Password<input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+  {
+    window.open('target.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+
+
+<br>
+<a href="form.html"><marquee style="color:red; font-size:20px;">New User Registration</marquee></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<center>
+<B>VGI</B> 2018 &copy; Designed by:-
+</center>
+</body>
+</html>
